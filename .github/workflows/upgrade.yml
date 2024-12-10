@@ -89,8 +89,6 @@ jobs:
             body  = 'Automated PR',
             head  = 'chore-dep-update-${{inputs.branch}}',
             base  = '${{inputs.branch}}';
-            head  = 'chore-dep-update-${{inputs.branch}}',
-            base  = '${{inputs.branch}}';
           
           (async () => {
             const response = await octokit.request(
