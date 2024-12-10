@@ -63,10 +63,8 @@ jobs:
         run: |
           git config --global user.email "ci@genesis.global" && git config --global user.name "CI"
           git checkout -b chore-dep-update-${BRANCH}
-          git checkout -b chore-dep-update-${BRANCH}
           git add --all
           git commit -m "fix: automated dependency version update [skip-ci] PSD-9"
-          git push -f --set-upstream origin chore-dep-update-${BRANCH}
           git push -f --set-upstream origin chore-dep-update-${BRANCH}
 
       - name: Raise PR
